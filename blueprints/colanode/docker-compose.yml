@@ -12,7 +12,6 @@ services:
 
   valkey:
     image: valkey/valkey:8.1
-    container_name: colanode_valkey
     restart: always
     command: ["valkey-server", "--requirepass", "${VALKEY_PASSWORD}"]
     volumes:
