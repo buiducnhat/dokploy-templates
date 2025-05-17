@@ -33,7 +33,6 @@ services:
 
   server:
     image: ghcr.io/colanode/server:latest
-    container_name: colanode_server
     restart: always
     depends_on:
       - postgres
